@@ -8,6 +8,7 @@
 import Foundation
 
 struct Commit {
+	let id: UUID
 	let count: String
 	let date: String
 	let level: String

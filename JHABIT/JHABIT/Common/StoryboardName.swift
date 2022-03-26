@@ -6,5 +6,6 @@
 //
 
 enum StoryboardName: String {
+	case intro = "Intro"
     case main = "Main"
 }

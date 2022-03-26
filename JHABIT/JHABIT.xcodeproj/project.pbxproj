@@ -27,6 +27,13 @@
 		E9CB331F27EED168000C8E0F /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB331E27EED168000C8E0F /* UITableView+Extension.swift */; };
 		E9CB332227EED591000C8E0F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E9CB332127EED591000C8E0F /* Alamofire */; };
 		E9CB332427EEE17F000C8E0F /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB332327EEE17F000C8E0F /* Commit.swift */; };
+		E9CB332827EEE849000C8E0F /* Commit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9CB332627EEE849000C8E0F /* Commit.xcdatamodeld */; };
+		E9CB332B27EEECB7000C8E0F /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CB332A27EEECB7000C8E0F /* Intro.storyboard */; };
+		E9CB332D27EEECC3000C8E0F /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB332C27EEECC3000C8E0F /* IntroViewController.swift */; };
+		E9CB332F27EEED57000C8E0F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB332E27EEED57000C8E0F /* CoreDataManager.swift */; };
+		E9CB333227EF5AE3000C8E0F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E9CB333127EF5AE3000C8E0F /* Lottie */; };
+		E9CB333527EF5DA6000C8E0F /* 5694-growing.json in Resources */ = {isa = PBXBuildFile; fileRef = E9CB333427EF5DA6000C8E0F /* 5694-growing.json */; };
+		E9CB333727EF5DAC000C8E0F /* 86521-growth-preloader-cyphr001.json in Resources */ = {isa = PBXBuildFile; fileRef = E9CB333627EF5DAC000C8E0F /* 86521-growth-preloader-cyphr001.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +74,12 @@
 		E9CB331C27EED14F000C8E0F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E9CB331E27EED168000C8E0F /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		E9CB332327EEE17F000C8E0F /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		E9CB332727EEE849000C8E0F /* Commit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Commit.xcdatamodel; sourceTree = "<group>"; };
+		E9CB332A27EEECB7000C8E0F /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		E9CB332C27EEECC3000C8E0F /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		E9CB332E27EEED57000C8E0F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		E9CB333427EF5DA6000C8E0F /* 5694-growing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "5694-growing.json"; path = "../../../../../../Downloads/5694-growing.json"; sourceTree = "<group>"; };
+		E9CB333627EF5DAC000C8E0F /* 86521-growth-preloader-cyphr001.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "86521-growth-preloader-cyphr001.json"; path = "../../../../../../Downloads/86521-growth-preloader-cyphr001.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CB333227EF5AE3000C8E0F /* Lottie in Frameworks */,
 				E9CB331527EECF13000C8E0F /* SwiftSoup in Frameworks */,
 				E9CB332227EED591000C8E0F /* Alamofire in Frameworks */,
 				E9CB331B27EECF70000C8E0F /* Then in Frameworks */,
@@ -155,6 +169,7 @@
 		E9CB330027EEC3AE000C8E0F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E9CB332927EEECAD000C8E0F /* Intro */,
 				E9CB330F27EECE63000C8E0F /* Base */,
 				E9CB331027EECE68000C8E0F /* Main */,
 			);
@@ -175,6 +190,7 @@
 				E9CB330527EECAF4000C8E0F /* API */,
 				E9CB330427EECAED000C8E0F /* Service */,
 				E9CB330327EECAE4000C8E0F /* Model */,
+				E9CB332527EEE770000C8E0F /* DataBase */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -211,6 +227,7 @@
 		E9CB330727EECB0A000C8E0F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E9CB333327EF5D8F000C8E0F /* Lottie */,
 				E9CB330927EECDF7000C8E0F /* ReuseViewIdentifierable.swift */,
 				E9CB330B27EECE34000C8E0F /* ViewControllerFromStoryboard.swift */,
 				E9CB330D27EECE44000C8E0F /* StoryboardName.swift */,
@@ -244,6 +261,33 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		E9CB332527EEE770000C8E0F /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				E9CB332627EEE849000C8E0F /* Commit.xcdatamodeld */,
+				E9CB332E27EEED57000C8E0F /* CoreDataManager.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		E9CB332927EEECAD000C8E0F /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				E9CB332A27EEECB7000C8E0F /* Intro.storyboard */,
+				E9CB332C27EEECC3000C8E0F /* IntroViewController.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		E9CB333327EF5D8F000C8E0F /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				E9CB333427EF5DA6000C8E0F /* 5694-growing.json */,
+				E9CB333627EF5DAC000C8E0F /* 86521-growth-preloader-cyphr001.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,6 +309,7 @@
 				E9CB331727EECF60000C8E0F /* SnapKit */,
 				E9CB331A27EECF70000C8E0F /* Then */,
 				E9CB332127EED591000C8E0F /* Alamofire */,
+				E9CB333127EF5AE3000C8E0F /* Lottie */,
 			);
 			productName = JHABIT;
 			productReference = E9CB32CD27EEC3A5000C8E0F /* JHABIT.app */;
@@ -343,6 +388,7 @@
 				E9CB331627EECF60000C8E0F /* XCRemoteSwiftPackageReference "SnapKit" */,
 				E9CB331927EECF70000C8E0F /* XCRemoteSwiftPackageReference "Then" */,
 				E9CB332027EED591000C8E0F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E9CB333027EF5AE3000C8E0F /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = E9CB32CE27EEC3A5000C8E0F /* Products */;
 			projectDirPath = "";
@@ -363,6 +409,9 @@
 				E9CB32DD27EEC3A6000C8E0F /* LaunchScreen.storyboard in Resources */,
 				E9CB32DA27EEC3A6000C8E0F /* Assets.xcassets in Resources */,
 				E9CB32D827EEC3A5000C8E0F /* Main.storyboard in Resources */,
+				E9CB333727EF5DAC000C8E0F /* 86521-growth-preloader-cyphr001.json in Resources */,
+				E9CB332B27EEECB7000C8E0F /* Intro.storyboard in Resources */,
+				E9CB333527EF5DA6000C8E0F /* 5694-growing.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,9 +438,12 @@
 			files = (
 				E9CB332427EEE17F000C8E0F /* Commit.swift in Sources */,
 				E9CB330A27EECDF7000C8E0F /* ReuseViewIdentifierable.swift in Sources */,
+				E9CB332827EEE849000C8E0F /* Commit.xcdatamodeld in Sources */,
+				E9CB332D27EEECC3000C8E0F /* IntroViewController.swift in Sources */,
 				E9CB330C27EECE34000C8E0F /* ViewControllerFromStoryboard.swift in Sources */,
 				E9CB331F27EED168000C8E0F /* UITableView+Extension.swift in Sources */,
 				E9CB331D27EED14F000C8E0F /* UIView+Extension.swift in Sources */,
+				E9CB332F27EEED57000C8E0F /* CoreDataManager.swift in Sources */,
 				E9CB32D527EEC3A5000C8E0F /* MainViewController.swift in Sources */,
 				E9CB330E27EECE44000C8E0F /* StoryboardName.swift in Sources */,
 				E9CB32D127EEC3A5000C8E0F /* AppDelegate.swift in Sources */,
@@ -592,7 +644,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -622,7 +674,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -772,6 +824,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		E9CB333027EF5AE3000C8E0F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -795,7 +855,25 @@
 			package = E9CB332027EED591000C8E0F /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
+		E9CB333127EF5AE3000C8E0F /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9CB333027EF5AE3000C8E0F /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		E9CB332627EEE849000C8E0F /* Commit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E9CB332727EEE849000C8E0F /* Commit.xcdatamodel */,
+			);
+			currentVersion = E9CB332727EEE849000C8E0F /* Commit.xcdatamodel */;
+			path = Commit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E9CB32C527EEC3A5000C8E0F /* Project object */;
 }

@@ -25,6 +25,8 @@
 		E9CB331B27EECF70000C8E0F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = E9CB331A27EECF70000C8E0F /* Then */; };
 		E9CB331D27EED14F000C8E0F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB331C27EED14F000C8E0F /* UIView+Extension.swift */; };
 		E9CB331F27EED168000C8E0F /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB331E27EED168000C8E0F /* UITableView+Extension.swift */; };
+		E9CB332227EED591000C8E0F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E9CB332127EED591000C8E0F /* Alamofire */; };
+		E9CB332427EEE17F000C8E0F /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB332327EEE17F000C8E0F /* Commit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,7 @@
 		E9CB331127EECE91000C8E0F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E9CB331C27EED14F000C8E0F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E9CB331E27EED168000C8E0F /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		E9CB332327EEE17F000C8E0F /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9CB331527EECF13000C8E0F /* SwiftSoup in Frameworks */,
+				E9CB332227EED591000C8E0F /* Alamofire in Frameworks */,
 				E9CB331B27EECF70000C8E0F /* Then in Frameworks */,
 				E9CB331827EECF60000C8E0F /* SnapKit in Frameworks */,
 			);
@@ -178,6 +182,7 @@
 		E9CB330327EECAE4000C8E0F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E9CB332327EEE17F000C8E0F /* Commit.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 				E9CB331427EECF13000C8E0F /* SwiftSoup */,
 				E9CB331727EECF60000C8E0F /* SnapKit */,
 				E9CB331A27EECF70000C8E0F /* Then */,
+				E9CB332127EED591000C8E0F /* Alamofire */,
 			);
 			productName = JHABIT;
 			productReference = E9CB32CD27EEC3A5000C8E0F /* JHABIT.app */;
@@ -336,6 +342,7 @@
 				E9CB331327EECF13000C8E0F /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 				E9CB331627EECF60000C8E0F /* XCRemoteSwiftPackageReference "SnapKit" */,
 				E9CB331927EECF70000C8E0F /* XCRemoteSwiftPackageReference "Then" */,
+				E9CB332027EED591000C8E0F /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = E9CB32CE27EEC3A5000C8E0F /* Products */;
 			projectDirPath = "";
@@ -380,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CB332427EEE17F000C8E0F /* Commit.swift in Sources */,
 				E9CB330A27EECDF7000C8E0F /* ReuseViewIdentifierable.swift in Sources */,
 				E9CB330C27EECE34000C8E0F /* ViewControllerFromStoryboard.swift in Sources */,
 				E9CB331F27EED168000C8E0F /* UITableView+Extension.swift in Sources */,
@@ -756,6 +764,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		E9CB332027EED591000C8E0F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -773,6 +789,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E9CB331927EECF70000C8E0F /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		E9CB332127EED591000C8E0F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9CB332027EED591000C8E0F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

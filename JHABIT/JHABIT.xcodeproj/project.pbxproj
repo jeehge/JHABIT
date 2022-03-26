@@ -16,6 +16,15 @@
 		E9CB32E827EEC3A6000C8E0F /* JHABITTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB32E727EEC3A6000C8E0F /* JHABITTests.swift */; };
 		E9CB32F227EEC3A6000C8E0F /* JHABITUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB32F127EEC3A6000C8E0F /* JHABITUITests.swift */; };
 		E9CB32F427EEC3A6000C8E0F /* JHABITUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB32F327EEC3A6000C8E0F /* JHABITUITestsLaunchTests.swift */; };
+		E9CB330A27EECDF7000C8E0F /* ReuseViewIdentifierable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB330927EECDF7000C8E0F /* ReuseViewIdentifierable.swift */; };
+		E9CB330C27EECE34000C8E0F /* ViewControllerFromStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB330B27EECE34000C8E0F /* ViewControllerFromStoryboard.swift */; };
+		E9CB330E27EECE44000C8E0F /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB330D27EECE44000C8E0F /* StoryboardName.swift */; };
+		E9CB331227EECE91000C8E0F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB331127EECE91000C8E0F /* BaseViewController.swift */; };
+		E9CB331527EECF13000C8E0F /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = E9CB331427EECF13000C8E0F /* SwiftSoup */; };
+		E9CB331827EECF60000C8E0F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E9CB331727EECF60000C8E0F /* SnapKit */; };
+		E9CB331B27EECF70000C8E0F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = E9CB331A27EECF70000C8E0F /* Then */; };
+		E9CB331D27EED14F000C8E0F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB331C27EED14F000C8E0F /* UIView+Extension.swift */; };
+		E9CB331F27EED168000C8E0F /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB331E27EED168000C8E0F /* UITableView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,12 @@
 		E9CB32ED27EEC3A6000C8E0F /* JHABITUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHABITUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CB32F127EEC3A6000C8E0F /* JHABITUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHABITUITests.swift; sourceTree = "<group>"; };
 		E9CB32F327EEC3A6000C8E0F /* JHABITUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHABITUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E9CB330927EECDF7000C8E0F /* ReuseViewIdentifierable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseViewIdentifierable.swift; sourceTree = "<group>"; };
+		E9CB330B27EECE34000C8E0F /* ViewControllerFromStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFromStoryboard.swift; sourceTree = "<group>"; };
+		E9CB330D27EECE44000C8E0F /* StoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
+		E9CB331127EECE91000C8E0F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E9CB331C27EED14F000C8E0F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E9CB331E27EED168000C8E0F /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CB331527EECF13000C8E0F /* SwiftSoup in Frameworks */,
+				E9CB331B27EECF70000C8E0F /* Then in Frameworks */,
+				E9CB331827EECF60000C8E0F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,8 +151,8 @@
 		E9CB330027EEC3AE000C8E0F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E9CB32D627EEC3A5000C8E0F /* Main.storyboard */,
-				E9CB32D427EEC3A5000C8E0F /* MainViewController.swift */,
+				E9CB330F27EECE63000C8E0F /* Base */,
+				E9CB331027EECE68000C8E0F /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +206,9 @@
 		E9CB330727EECB0A000C8E0F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E9CB330927EECDF7000C8E0F /* ReuseViewIdentifierable.swift */,
+				E9CB330B27EECE34000C8E0F /* ViewControllerFromStoryboard.swift */,
+				E9CB330D27EECE44000C8E0F /* StoryboardName.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -195,8 +216,27 @@
 		E9CB330827EECB18000C8E0F /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E9CB331C27EED14F000C8E0F /* UIView+Extension.swift */,
+				E9CB331E27EED168000C8E0F /* UITableView+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		E9CB330F27EECE63000C8E0F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E9CB331127EECE91000C8E0F /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E9CB331027EECE68000C8E0F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E9CB32D627EEC3A5000C8E0F /* Main.storyboard */,
+				E9CB32D427EEC3A5000C8E0F /* MainViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +255,11 @@
 			dependencies = (
 			);
 			name = JHABIT;
+			packageProductDependencies = (
+				E9CB331427EECF13000C8E0F /* SwiftSoup */,
+				E9CB331727EECF60000C8E0F /* SnapKit */,
+				E9CB331A27EECF70000C8E0F /* Then */,
+			);
 			productName = JHABIT;
 			productReference = E9CB32CD27EEC3A5000C8E0F /* JHABIT.app */;
 			productType = "com.apple.product-type.application";
@@ -287,6 +332,11 @@
 				Base,
 			);
 			mainGroup = E9CB32C427EEC3A5000C8E0F;
+			packageReferences = (
+				E9CB331327EECF13000C8E0F /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				E9CB331627EECF60000C8E0F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				E9CB331927EECF70000C8E0F /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = E9CB32CE27EEC3A5000C8E0F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -330,8 +380,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CB330A27EECDF7000C8E0F /* ReuseViewIdentifierable.swift in Sources */,
+				E9CB330C27EECE34000C8E0F /* ViewControllerFromStoryboard.swift in Sources */,
+				E9CB331F27EED168000C8E0F /* UITableView+Extension.swift in Sources */,
+				E9CB331D27EED14F000C8E0F /* UIView+Extension.swift in Sources */,
 				E9CB32D527EEC3A5000C8E0F /* MainViewController.swift in Sources */,
+				E9CB330E27EECE44000C8E0F /* StoryboardName.swift in Sources */,
 				E9CB32D127EEC3A5000C8E0F /* AppDelegate.swift in Sources */,
+				E9CB331227EECE91000C8E0F /* BaseViewController.swift in Sources */,
 				E9CB32D327EEC3A5000C8E0F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -492,7 +548,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -507,8 +563,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U3LY873Q2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JHABIT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -523,6 +581,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jeehge.com.JHABIT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -534,8 +593,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U3LY873Q2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JHABIT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -550,6 +611,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jeehge.com.JHABIT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -668,6 +730,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E9CB331327EECF13000C8E0F /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		E9CB331627EECF60000C8E0F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		E9CB331927EECF70000C8E0F /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9CB331427EECF13000C8E0F /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9CB331327EECF13000C8E0F /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		E9CB331727EECF60000C8E0F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9CB331627EECF60000C8E0F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		E9CB331A27EECF70000C8E0F /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9CB331927EECF70000C8E0F /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E9CB32C527EEC3A5000C8E0F /* Project object */;
 }

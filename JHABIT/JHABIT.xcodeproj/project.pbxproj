@@ -34,6 +34,7 @@
 		E9CB333227EF5AE3000C8E0F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E9CB333127EF5AE3000C8E0F /* Lottie */; };
 		E9CB333527EF5DA6000C8E0F /* 5694-growing.json in Resources */ = {isa = PBXBuildFile; fileRef = E9CB333427EF5DA6000C8E0F /* 5694-growing.json */; };
 		E9CB333727EF5DAC000C8E0F /* 86521-growth-preloader-cyphr001.json in Resources */ = {isa = PBXBuildFile; fileRef = E9CB333627EF5DAC000C8E0F /* 86521-growth-preloader-cyphr001.json */; };
+		E9CB333927EFF1CE000C8E0F /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB333827EFF1CE000C8E0F /* InputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		E9CB332E27EEED57000C8E0F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		E9CB333427EF5DA6000C8E0F /* 5694-growing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "5694-growing.json"; path = "../../../../../../Downloads/5694-growing.json"; sourceTree = "<group>"; };
 		E9CB333627EF5DAC000C8E0F /* 86521-growth-preloader-cyphr001.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "86521-growth-preloader-cyphr001.json"; path = "../../../../../../Downloads/86521-growth-preloader-cyphr001.json"; sourceTree = "<group>"; };
+		E9CB333827EFF1CE000C8E0F /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 			children = (
 				E9CB32D627EEC3A5000C8E0F /* Main.storyboard */,
 				E9CB32D427EEC3A5000C8E0F /* MainViewController.swift */,
+				E9CB333827EFF1CE000C8E0F /* InputViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				E9CB332427EEE17F000C8E0F /* Commit.swift in Sources */,
 				E9CB330A27EECDF7000C8E0F /* ReuseViewIdentifierable.swift in Sources */,
 				E9CB332827EEE849000C8E0F /* Commit.xcdatamodeld in Sources */,
+				E9CB333927EFF1CE000C8E0F /* InputViewController.swift in Sources */,
 				E9CB332D27EEECC3000C8E0F /* IntroViewController.swift in Sources */,
 				E9CB330C27EECE34000C8E0F /* ViewControllerFromStoryboard.swift in Sources */,
 				E9CB331F27EED168000C8E0F /* UITableView+Extension.swift in Sources */,

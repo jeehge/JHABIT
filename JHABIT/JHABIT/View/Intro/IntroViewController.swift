@@ -21,25 +21,31 @@ final class IntroViewController: BaseViewController {
     private func initIntroAnimation() {
 		let animationView: AnimationView = .init(name: "5694-growing")
 		view.addSubview(animationView)
-
-		// animationView의 설정 작업은 알아서 하세요
+		
 		animationView.frame = self.view.bounds
 		animationView.center = self.view.center
 		animationView.contentMode = .scaleAspectFit
 		
-		// 애니메이션을 1번만 실행함
 		animationView.loopMode = .playOnce
 		animationView.play()
 
-		Timer.scheduledTimer(withTimeInterval: 10.0, repeats: false, block: { _ in
+		Timer.scheduledTimer(withTimeInterval: 6.0, repeats: false, block: { _ in
 			self.nextViewController()
 		})
     }
 
     private func nextViewController() {
-        let mainVC: InputViewController = InputViewController.viewController(from: .main)
-        mainVC.modalPresentationStyle = .fullScreen
-		mainVC.modalTransitionStyle = .crossDissolve
-        present(mainVC, animated: true, completion: nil)
+		if let _ = Storage.githubID {
+			let mainVC: MainViewController = MainViewController.viewController(from: .main)
+			mainVC.modalPresentationStyle = .fullScreen
+			mainVC.modalTransitionStyle = .crossDissolve
+			present(mainVC, animated: true, completion: nil)
+		} else {
+			let inputVC: InputViewController = InputViewController.viewController(from: .main)
+			inputVC.modalPresentationStyle = .fullScreen
+			inputVC.modalTransitionStyle = .crossDissolve
+			present(inputVC, animated: true, completion: nil)
+		}
+        
     }
 }

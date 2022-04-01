@@ -35,6 +35,8 @@
 		E9CB333527EF5DA6000C8E0F /* 5694-growing.json in Resources */ = {isa = PBXBuildFile; fileRef = E9CB333427EF5DA6000C8E0F /* 5694-growing.json */; };
 		E9CB333727EF5DAC000C8E0F /* 86521-growth-preloader-cyphr001.json in Resources */ = {isa = PBXBuildFile; fileRef = E9CB333627EF5DAC000C8E0F /* 86521-growth-preloader-cyphr001.json */; };
 		E9CB333927EFF1CE000C8E0F /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB333827EFF1CE000C8E0F /* InputViewController.swift */; };
+		E9CB333B27F7279E000C8E0F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB333A27F7279E000C8E0F /* Constant.swift */; };
+		E9CB333D27F72EE1000C8E0F /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB333C27F72EE1000C8E0F /* Storage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		E9CB333427EF5DA6000C8E0F /* 5694-growing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "5694-growing.json"; path = "../../../../../../Downloads/5694-growing.json"; sourceTree = "<group>"; };
 		E9CB333627EF5DAC000C8E0F /* 86521-growth-preloader-cyphr001.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "86521-growth-preloader-cyphr001.json"; path = "../../../../../../Downloads/86521-growth-preloader-cyphr001.json"; sourceTree = "<group>"; };
 		E9CB333827EFF1CE000C8E0F /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		E9CB333A27F7279E000C8E0F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		E9CB333C27F72EE1000C8E0F /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				E9CB330827EECB18000C8E0F /* Extension */,
+				E9CB333A27F7279E000C8E0F /* Constant.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 				E9CB330927EECDF7000C8E0F /* ReuseViewIdentifierable.swift */,
 				E9CB330B27EECE34000C8E0F /* ViewControllerFromStoryboard.swift */,
 				E9CB330D27EECE44000C8E0F /* StoryboardName.swift */,
+				E9CB333C27F72EE1000C8E0F /* Storage.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -441,6 +447,7 @@
 			files = (
 				E9CB332427EEE17F000C8E0F /* Commit.swift in Sources */,
 				E9CB330A27EECDF7000C8E0F /* ReuseViewIdentifierable.swift in Sources */,
+				E9CB333B27F7279E000C8E0F /* Constant.swift in Sources */,
 				E9CB332827EEE849000C8E0F /* Commit.xcdatamodeld in Sources */,
 				E9CB333927EFF1CE000C8E0F /* InputViewController.swift in Sources */,
 				E9CB332D27EEECC3000C8E0F /* IntroViewController.swift in Sources */,
@@ -451,6 +458,7 @@
 				E9CB32D527EEC3A5000C8E0F /* MainViewController.swift in Sources */,
 				E9CB330E27EECE44000C8E0F /* StoryboardName.swift in Sources */,
 				E9CB32D127EEC3A5000C8E0F /* AppDelegate.swift in Sources */,
+				E9CB333D27F72EE1000C8E0F /* Storage.swift in Sources */,
 				E9CB331227EECE91000C8E0F /* BaseViewController.swift in Sources */,
 				E9CB32D327EEC3A5000C8E0F /* SceneDelegate.swift in Sources */,
 			);

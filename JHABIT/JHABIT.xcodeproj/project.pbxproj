@@ -175,8 +175,8 @@
 		E9CB330027EEC3AE000C8E0F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E9CB332927EEECAD000C8E0F /* Intro */,
 				E9CB330F27EECE63000C8E0F /* Base */,
+				E9CB332927EEECAD000C8E0F /* Intro */,
 				E9CB331027EECE68000C8E0F /* Main */,
 			);
 			path = View;

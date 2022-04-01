@@ -23,6 +23,61 @@
             </objects>
             <point key="canvasLocation" x="20" y="94"/>
         </scene>
+        <!--Input View Controller-->
+        <scene sceneID="bpk-cj-RXn">
+            <objects>
+                <viewController storyboardIdentifier="InputViewController" id="wmd-fo-M3F" customClass="InputViewController" customModule="JHABIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dpf-CO-Nkx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zme-w1-tVF">
+                                <rect key="frame" x="32" y="401" width="350" height="94"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Github 아이디를 입력해주세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfM-6Q-7iS">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="z9C-Rc-dps"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S2V-wn-4Hv">
+                                        <rect key="frame" x="65" y="60" width="220" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="1Qc-Pg-mSW"/>
+                                            <constraint firstAttribute="width" constant="220" id="WnQ-UF-9Tj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="JfM-6Q-7iS" firstAttribute="top" secondItem="Zme-w1-tVF" secondAttribute="top" id="QPH-A1-Rva"/>
+                                    <constraint firstItem="S2V-wn-4Hv" firstAttribute="centerX" secondItem="JfM-6Q-7iS" secondAttribute="centerX" id="QRE-jB-Dre"/>
+                                    <constraint firstItem="S2V-wn-4Hv" firstAttribute="top" secondItem="JfM-6Q-7iS" secondAttribute="bottom" constant="16" id="VKE-8m-EhM"/>
+                                    <constraint firstItem="JfM-6Q-7iS" firstAttribute="leading" secondItem="Zme-w1-tVF" secondAttribute="leading" id="aHT-HA-hSf"/>
+                                    <constraint firstAttribute="height" constant="94" id="aMG-Lo-fLh"/>
+                                    <constraint firstAttribute="trailing" secondItem="JfM-6Q-7iS" secondAttribute="trailing" id="op5-zQ-jDO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XfL-Hh-en8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zme-w1-tVF" firstAttribute="centerX" secondItem="dpf-CO-Nkx" secondAttribute="centerX" id="K8h-TO-2Hr"/>
+                            <constraint firstItem="XfL-Hh-en8" firstAttribute="trailing" secondItem="Zme-w1-tVF" secondAttribute="trailing" constant="32" id="ksK-Vw-xbn"/>
+                            <constraint firstItem="Zme-w1-tVF" firstAttribute="centerY" secondItem="dpf-CO-Nkx" secondAttribute="centerY" id="yXl-y5-0OG"/>
+                            <constraint firstItem="Zme-w1-tVF" firstAttribute="leading" secondItem="XfL-Hh-en8" secondAttribute="leading" constant="32" id="z9t-FO-8m4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KRj-K4-bof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-804" y="94"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

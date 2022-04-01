@@ -32,14 +32,14 @@ final class IntroViewController: BaseViewController {
 		animationView.play()
 
 		Timer.scheduledTimer(withTimeInterval: 10.0, repeats: false, block: { _ in
-			self.nextMainViewController()
+			self.nextViewController()
 		})
     }
 
-    private func nextMainViewController() {
-        let mainVC: MainViewController = MainViewController.viewController(from: .main)
+    private func nextViewController() {
+        let mainVC: InputViewController = InputViewController.viewController(from: .main)
         mainVC.modalPresentationStyle = .fullScreen
-        mainVC.modalTransitionStyle = .crossDissolve
+		mainVC.modalTransitionStyle = .crossDissolve
         present(mainVC, animated: true, completion: nil)
     }
 }

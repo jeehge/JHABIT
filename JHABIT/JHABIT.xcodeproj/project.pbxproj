@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9917F8727F7E2B000753668 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9917F8627F7E2B000753668 /* SettingViewController.swift */; };
+		E9917F8927F7E42A00753668 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9917F8827F7E42A00753668 /* Setting.storyboard */; };
+		E9917F8B27F8095300753668 /* MainInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9917F8A27F8095300753668 /* MainInfoView.swift */; };
 		E9CB32D127EEC3A5000C8E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB32D027EEC3A5000C8E0F /* AppDelegate.swift */; };
 		E9CB32D327EEC3A5000C8E0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB32D227EEC3A5000C8E0F /* SceneDelegate.swift */; };
 		E9CB32D527EEC3A5000C8E0F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB32D427EEC3A5000C8E0F /* MainViewController.swift */; };
@@ -57,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E9917F8627F7E2B000753668 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		E9917F8827F7E42A00753668 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		E9917F8A27F8095300753668 /* MainInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInfoView.swift; sourceTree = "<group>"; };
 		E9CB32CD27EEC3A5000C8E0F /* JHABIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHABIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CB32D027EEC3A5000C8E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9CB32D227EEC3A5000C8E0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +124,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9917F8527F7E29800753668 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				E9917F8627F7E2B000753668 /* SettingViewController.swift */,
+				E9917F8827F7E42A00753668 /* Setting.storyboard */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		E9CB32C427EEC3A5000C8E0F = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +193,7 @@
 				E9CB330F27EECE63000C8E0F /* Base */,
 				E9CB332927EEECAD000C8E0F /* Intro */,
 				E9CB331027EECE68000C8E0F /* Main */,
+				E9917F8527F7E29800753668 /* Setting */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,6 +282,7 @@
 				E9CB32D627EEC3A5000C8E0F /* Main.storyboard */,
 				E9CB32D427EEC3A5000C8E0F /* MainViewController.swift */,
 				E9CB333827EFF1CE000C8E0F /* InputViewController.swift */,
+				E9917F8A27F8095300753668 /* MainInfoView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -417,6 +434,7 @@
 			files = (
 				E9CB32DD27EEC3A6000C8E0F /* LaunchScreen.storyboard in Resources */,
 				E9CB32DA27EEC3A6000C8E0F /* Assets.xcassets in Resources */,
+				E9917F8927F7E42A00753668 /* Setting.storyboard in Resources */,
 				E9CB32D827EEC3A5000C8E0F /* Main.storyboard in Resources */,
 				E9CB333727EF5DAC000C8E0F /* 86521-growth-preloader-cyphr001.json in Resources */,
 				E9CB332B27EEECB7000C8E0F /* Intro.storyboard in Resources */,
@@ -448,8 +466,10 @@
 				E9CB332427EEE17F000C8E0F /* Commit.swift in Sources */,
 				E9CB330A27EECDF7000C8E0F /* ReuseViewIdentifierable.swift in Sources */,
 				E9CB333B27F7279E000C8E0F /* Constant.swift in Sources */,
+				E9917F8B27F8095300753668 /* MainInfoView.swift in Sources */,
 				E9CB332827EEE849000C8E0F /* Commit.xcdatamodeld in Sources */,
 				E9CB333927EFF1CE000C8E0F /* InputViewController.swift in Sources */,
+				E9917F8727F7E2B000753668 /* SettingViewController.swift in Sources */,
 				E9CB332D27EEECC3000C8E0F /* IntroViewController.swift in Sources */,
 				E9CB330C27EECE34000C8E0F /* ViewControllerFromStoryboard.swift in Sources */,
 				E9CB331F27EED168000C8E0F /* UITableView+Extension.swift in Sources */,

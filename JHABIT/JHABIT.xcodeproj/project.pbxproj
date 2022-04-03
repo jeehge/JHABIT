@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E93C654627F9ED7F00E1701B /* CommitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93C654527F9ED7F00E1701B /* CommitCell.swift */; };
 		E9917F8727F7E2B000753668 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9917F8627F7E2B000753668 /* SettingViewController.swift */; };
 		E9917F8927F7E42A00753668 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9917F8827F7E42A00753668 /* Setting.storyboard */; };
 		E9917F8B27F8095300753668 /* MainInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9917F8A27F8095300753668 /* MainInfoView.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E93C654527F9ED7F00E1701B /* CommitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitCell.swift; sourceTree = "<group>"; };
 		E9917F8627F7E2B000753668 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		E9917F8827F7E42A00753668 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		E9917F8A27F8095300753668 /* MainInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInfoView.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E93C654727F9ED8300E1701B /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E93C654527F9ED7F00E1701B /* CommitCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
 		E9917F8527F7E29800753668 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +289,7 @@
 		E9CB331027EECE68000C8E0F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E93C654727F9ED8300E1701B /* Custom Cell */,
 				E9CB32D627EEC3A5000C8E0F /* Main.storyboard */,
 				E9CB32D427EEC3A5000C8E0F /* MainViewController.swift */,
 				E9CB333827EFF1CE000C8E0F /* InputViewController.swift */,
@@ -463,6 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93C654627F9ED7F00E1701B /* CommitCell.swift in Sources */,
 				E9CB332427EEE17F000C8E0F /* Commit.swift in Sources */,
 				E9CB330A27EECDF7000C8E0F /* ReuseViewIdentifierable.swift in Sources */,
 				E9CB333B27F7279E000C8E0F /* Constant.swift in Sources */,

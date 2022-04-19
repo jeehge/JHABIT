@@ -12,9 +12,17 @@ import UIKit
 final class MainViewController: BaseViewController {
     
 	// MARK: - @IBOutlet
-	@IBOutlet private weak var infoView: UIView!
-	@IBOutlet private weak var collectionView: UICollectionView!
-	@IBOutlet private weak var tableView: UITableView!
+	let infoView = MainInfoView().then {
+		$0.translatesAutoresizingMaskIntoConstraints = false
+		$0.backgroundColor = .white
+		$0.clipsToBounds = true
+		$0.layer.cornerRadius = 18
+	}
+	
+	let tableView = UITableView().then {
+		$0.backgroundColor = .green
+		$0.register(CommitCell.self)
+	}
 	
 	// MARK: - Properties
     private var list: [Commit] = []
@@ -23,50 +31,35 @@ final class MainViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		
+		view.backgroundColor = .lightGray
+		
 		dddd()
-		cofigInfoView()
-		configTableView()
+		setupUI()
+//		configTableView()
     }
 	
 	// MARK: - config
-	private func cofigInfoView() {
-		infoView.backgroundColor = .gray
-		infoView.clipsToBounds = true
-		infoView.layer.cornerRadius = infoView.frame.size.width / 18
+	private func setupUI() {
+		view.addSubviews(infoView, tableView)
 		
-		let githubIdLabel = UILabel().then {
-			$0.text = "Github ID 🌱"
-			$0.font = .systemFont(ofSize: 16, weight: .medium)
+		infoView.snp.makeConstraints {
+			$0.top.equalTo(view.layoutMarginsGuide.snp.top).inset(16)
+			$0.left.right.equalToSuperview().inset(16)
+			$0.height.equalTo(90)
 		}
 		
-		let githubIdValueLabel = UILabel().then {
-			$0.text = Storage.githubID
-			$0.font = .systemFont(ofSize: 14, weight: .bold)
-		}
-		
-		let settingButton = UIButton().then {
-			$0.setTitle("설정", for: .normal)
-		}
-		
-		infoView.addSubviews(githubIdLabel, githubIdValueLabel, settingButton)
-		
-		githubIdLabel.snp.makeConstraints {
-			$0.top.equalToSuperview().inset(8)
-			$0.left.equalToSuperview().inset(16)
-		}
-		
-		githubIdValueLabel.snp.makeConstraints {
-			$0.top.equalTo(githubIdLabel.snp.bottom).inset(8)
-			$0.left.equalToSuperview().inset(16)
-		}
-	}
-	
-	private func configCollectionView() {
-		
+		configTableView()
 	}
 	
 	private func configTableView() {
 		tableView.dataSource = self
+//		tableView.delegate = self
+		
+		tableView.snp.makeConstraints {
+			$0.top.equalToSuperview().inset(300)
+			$0.left.right.equalToSuperview()
+			$0.bottom.equalToSuperview()
+		}
 	}
 	
 	func dddd() {
@@ -103,6 +96,7 @@ final class MainViewController: BaseViewController {
 //						print("날짜 : \(commit.date)\n커밋: \(commit.count)")
 //						manager.save(data: commit)
 					}
+					self.list = self.list.reversed()
 					self.tableView.reloadData()
 				} catch {
 					print("crawl error")
@@ -110,18 +104,19 @@ final class MainViewController: BaseViewController {
 			}
 //		}
 	}
+	
+	
 }
 
 // MARK: - UITableViewDataSource
 extension MainViewController: UITableViewDataSource {
-	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return list.count
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: "CommitCell", for: indexPath)
-		cell.textLabel?.text = "날짜 : \(list[indexPath.row].date) 커밋 개수 :\(list[indexPath.row].count)"
+		let cell = tableView.dequeueReusableCell(withIdentifier: CommitCell.identifier, for: indexPath) as! CommitCell
+		cell.setCell(info: list[indexPath.row])
 		return cell
 	}
 }

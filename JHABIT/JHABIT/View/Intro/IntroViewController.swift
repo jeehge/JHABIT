@@ -46,6 +46,5 @@ final class IntroViewController: BaseViewController {
 			inputVC.modalTransitionStyle = .crossDissolve
 			present(inputVC, animated: true, completion: nil)
 		}
-        
     }
 }

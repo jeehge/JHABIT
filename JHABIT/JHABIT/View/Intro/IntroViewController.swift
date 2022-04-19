@@ -29,7 +29,7 @@ final class IntroViewController: BaseViewController {
 		animationView.loopMode = .playOnce
 		animationView.play()
 
-		Timer.scheduledTimer(withTimeInterval: 6.0, repeats: false, block: { _ in
+		Timer.scheduledTimer(withTimeInterval: 4.0, repeats: false, block: { _ in
 			self.nextViewController()
 		})
     }

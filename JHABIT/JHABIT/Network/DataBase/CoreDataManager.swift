@@ -9,15 +9,14 @@ import CoreData
 import UIKit
 
 final class CoreDataManager {
-    // MARK: - Properties
-
+    
+	// MARK: - Properties
     private var entityName: String
     private var entity: NSEntityDescription?
 
     private let managedContext: NSManagedObjectContext
 
     // MARK: - Initalize
-
     init(name: String) {
         entityName = name
 

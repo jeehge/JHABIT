@@ -10,7 +10,6 @@ import UIKit
 protocol ReuseViewIdentifierable { }
 
 extension ReuseViewIdentifierable where Self: UIView {
-    
     static var identifier: String {
         return String(describing: self)
     }

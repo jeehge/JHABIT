@@ -15,7 +15,6 @@ public struct Storage {
 		get {
 			UserDefaults.standard.string(forKey: "githubID")
 		}
-		
 		set {
 			UserDefaults.standard.set(newValue, forKey: "githubID")
 			UserDefaults.standard.synchronize()
